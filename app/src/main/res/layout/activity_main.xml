@@ -6,135 +6,47 @@
     android:layout_height="match_parent"
     tools:context=".Main">
 
-    <ScrollView
-        android:layout_width="368dp"
-        android:layout_height="375dp"
-        android:layout_marginBottom="28dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginStart="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <EditText
-                android:id="@+id/nombreEditText"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="text"
-                android:text="Nombre"
-                tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="16dp" />
-
-            <EditText
-                android:id="@+id/generoEditText"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Genero"
-                tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="108dp" />
-
-            <EditText
-                android:id="@+id/tiempoEditText"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Tiempo Activo" />
-
-            <EditText
-                android:id="@+id/discografiaEditText"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Compañia Discografica" />
-
-            <EditText
-                android:id="@+id/discosEditText"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="number"
-                android:text="Discos"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="41dp" />
-
-            <EditText
-                android:id="@+id/nombreRealEditText"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Nombre Real" />
-
-            <EditText
-                android:id="@+id/nacimientoEditText"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="date"
-                android:text="FechaNacimiento" />
-
-            <EditText
-                android:id="@+id/muerteEditText"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="date"
-                android:text="Fecha Muerte" />
-
-            <EditText
-                android:id="@+id/nacionalidadEditText"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Nacionalidad" />
-
-            <EditText
-                android:id="@+id/instrumentoeditText"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Instrument" />
-
-        </LinearLayout>
-    </ScrollView>
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:text="Solista o Vocalista"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="76dp"
+        android:text="Seleccione una Opcion"
         android:textColor="@android:color/black"
         android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.364"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/guardarButton"
+        android:id="@+id/botonSolistaVocalist"
+        android:layout_width="189dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="64dp"
+        android:text="Solistas y Vocalistas"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/botonBandasGrupos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginTop="48dp"
-        android:text="Guardar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="68dp"
+        android:text="Bnadas y Grupos"
+        app:layout_constraintEnd_toEndOf="@+id/botonSolistaVocalist"
+        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintStart_toStartOf="@+id/botonSolistaVocalist"
+        app:layout_constraintTop_toBottomOf="@+id/botonSolistaVocalist" />
 
 </android.support.constraint.ConstraintLayout>
